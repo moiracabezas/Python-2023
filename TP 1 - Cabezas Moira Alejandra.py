@@ -5,13 +5,12 @@
 
 import math
 
-f = 0.00579     # factor de friccion de Fanning
-Ro = 1000       # densidad del agua
-Vz = 1.38       # velocidad media
-L = 270         # longitud ingresada por el usuario
-D = 0.0254      # diametro de la tuberia
-R = D/2         # radio de la tuberia
-
+f = float(input(" Factor de friccion de Fanning: "))
+Ro = int(input(" Densidad del agua: "))
+Vz = float(input(" Velocidad media: "))
+L = float(input(" Longitud: "))
+D = float(input(" Diametro de la tuberia: "))
+R = D/2                          # Radio de la tuberia
 
 P_P =  f*0.5*Ro*(Vz**2)*((4*L)/D)    # perdida de presion
 Q = Vz* math.pi *(R**2)   # caudal de fluido
