@@ -10,12 +10,12 @@ Ro = int(input(" Densidad del agua: "))
 Vz = float(input(" Velocidad media: "))
 L = float(input(" Longitud: "))
 D = float(input(" Diametro de la tuberia: "))
-R = D/2                          # Radio de la tuberia
+R = D/2                              # Radio de la tuberia
 
 P_P =  F*0.5*Ro*(Vz**2)*((4*L)/D)    # perdida de presion
-Q = Vz* math.pi *(R**2)   # caudal de fluido
+Q = Vz* math.pi *(R**2)              # caudal de fluido
 
-Pot = P_P * Q   # potencia de la bomba
+Pot = P_P * Q                        # potencia de la bomba
 Pot/=1000
 Pot/=0.7457
 
